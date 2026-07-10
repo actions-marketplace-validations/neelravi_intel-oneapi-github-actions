@@ -75,3 +75,6 @@ runs:
 
         # Source the oneAPI environment
         source /opt/intel/oneapi/setvars.sh
+
+        # Make changes to the environment persisten
+        printenv >> "$GITHUB_ENV"
